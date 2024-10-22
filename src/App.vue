@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+
+import WebApp from '@twa-dev/sdk'
 </script>
 
 <template>
@@ -27,6 +29,8 @@ import HelloWorld from './components/HelloWorld.vue'
 			<q-badge transparent align="middle" color="orange"> app v3.0.0 </q-badge>
 		</div>
 	</div>
+
+	<button @click="() => WebApp.showAlert(`Hello World!`)">Show Alert</button>
 </template>
 
 <style scoped>

@@ -12,6 +12,9 @@ import 'quasar/src/css/index.sass'
 // Import your custom css
 import './style.css'
 
+// Import TWA SDK
+import WebApp from '@twa-dev/sdk'
+
 // Assumes your root component is App.vue
 // and placed in same folder as main.js
 import App from './App.vue'
@@ -24,3 +27,5 @@ myApp.use(Quasar, {
 
 // Assumes you have a <div id="app"></div> in your index.html
 myApp.mount('#app')
+
+WebApp.ready()
