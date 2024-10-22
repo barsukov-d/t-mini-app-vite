@@ -8,7 +8,7 @@ const tab = ref('mails')
 </script>
 
 <template>
-	<header>header</header>
+	<header>header !</header>
 	<main class="flex-shrink-0 flex-grow">
 		<router-view></router-view>
 	</main>
