@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // import HelloWorld from './components/HelloWorld.vue'
 
-import WebApp from '@twa-dev/sdk'
+// import WebApp from '@twa-dev/sdk'
 import { ref } from 'vue'
 
 const tab = ref('mails')
