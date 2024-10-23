@@ -21,21 +21,30 @@ const navigateTo = (page: string) => {
 	</main>
 	<footer>
 		<q-tabs v-model="tab" class="text-teal">
-			<q-tab @click="navigateTo('home')" name="home" icon="mail" label="Home" class="w-1/4" />
+			<q-tab @click="navigateTo('home')" name="home" icon="home" label="Home" class="w-1/3"
+				><q-badge color="red" text-color="white" floating>10+</q-badge></q-tab
+			>
+
 			<q-tab
 				@click="navigateTo('leaderboard')"
 				name="leaderboard"
-				icon="alarm"
+				icon="bar_chart"
 				label="Leaderboard"
-				class="w-1/2"
+				class="w-1/3"
 			/>
 			<q-tab
 				@click="navigateTo('friends')"
 				name="friends"
-				icon="movie"
+				icon="group"
 				label="Friends"
-				class="w-1/4"
+				class="w-1/3"
 			/>
 		</q-tabs>
 	</footer>
 </template>
+
+<style>
+.q-tab__label {
+	font-size: 12px;
+}
+</style>
