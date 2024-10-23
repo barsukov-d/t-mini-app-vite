@@ -10,22 +10,32 @@ const tab = ref('mails')
 
 const router = useRouter()
 
-function navigateToLeaderboard() {
-	router.push('/leaderboard')
+const navigateTo = (page: string) => {
+	router.push({ name: page })
 }
 </script>
 
 <template>
-	<header>header !</header>
 	<main class="flex-shrink-0 flex-grow">
 		<RouterView></RouterView>
 	</main>
 	<footer>
-		<button @click="navigateToLeaderboard">Перейти в лидерборд</button>
 		<q-tabs v-model="tab" class="text-teal">
-			<q-tab name="mails" icon="mail" label="Mails" />
-			<q-tab name="alarms" icon="alarm" label="Alarms" />
-			<q-tab name="movies" icon="movie" label="Movies" />
+			<q-tab @click="navigateTo('home')" name="home" icon="mail" label="Home" class="w-1/4" />
+			<q-tab
+				@click="navigateTo('leaderboard')"
+				name="leaderboard"
+				icon="alarm"
+				label="Leaderboard"
+				class="w-1/2"
+			/>
+			<q-tab
+				@click="navigateTo('friends')"
+				name="friends"
+				icon="movie"
+				label="Friends"
+				class="w-1/4"
+			/>
 		</q-tabs>
 	</footer>
 </template>

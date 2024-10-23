@@ -3,19 +3,30 @@
 import { createRouter, createMemoryHistory } from 'vue-router'
 import Home from '../pages/home.vue'
 import LeaderBoard from '../pages/leaderboard.vue'
+import Friends from '../pages/friends.vue'
 
 const routes = [
 	{
 		path: '/',
-		name: 'Home',
+		name: 'home',
 		component: Home,
 	},
 	{
 		path: '/leaderboard',
-		name: 'LiderBoard',
+		name: 'leaderboard',
 		component: LeaderBoard,
 	},
-	// Добавьте дополнительные маршруты здесь
+
+	{
+		path: '/friends',
+		name: 'friends',
+		component: Friends,
+	},
+
+	{
+		path: '/:pathMatch(.*)*',
+		redirect: { name: 'Home' },
+	},
 ]
 
 const router = createRouter({
