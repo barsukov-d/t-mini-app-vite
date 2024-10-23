@@ -1,6 +1,6 @@
 // src/router/index.ts
 
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createMemoryHistory } from 'vue-router'
 import Home from '../pages/home.vue'
 import LeaderBoard from '../pages/leaderboard.vue'
 
@@ -19,7 +19,7 @@ const routes = [
 ]
 
 const router = createRouter({
-	history: createWebHashHistory(),
+	history: createMemoryHistory(),
 	routes,
 })
 
