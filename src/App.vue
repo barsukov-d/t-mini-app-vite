@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // import HelloWorld from './components/HelloWorld.vue'
 
-// import WebApp from '@twa-dev/sdk'
+import WebApp from '@twa-dev/sdk'
 import { ref } from 'vue'
 import { RouterView } from 'vue-router'
 import { useRouter } from 'vue-router'
@@ -17,6 +17,7 @@ const navigateTo = (page: string) => {
 
 <template>
 	<main class="flex-shrink-0 flex-grow">
+		<pre>{{ WebApp.initDataUnsafe.user }}</pre>
 		<RouterView></RouterView>
 	</main>
 	<footer>
