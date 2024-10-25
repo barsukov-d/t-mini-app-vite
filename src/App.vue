@@ -18,6 +18,7 @@ const navigateTo = (page: string) => {
 <template>
 	<main class="flex-shrink-0 flex-grow">
 		<pre>{{ WebApp.initDataUnsafe.user }}</pre>
+		<pre>{{ WebApp.initData }}</pre>
 		<RouterView></RouterView>
 	</main>
 	<footer>
