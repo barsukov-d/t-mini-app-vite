@@ -64,7 +64,7 @@ const footerMenu = [
 	</footer>
 </template>
 
-<style>
+<style scoped>
 .q-tab__label {
 	font-size: 10px;
 }
