@@ -2,9 +2,6 @@
 
 import { createRouter, createMemoryHistory } from 'vue-router'
 import Home from '../pages/home.vue'
-import LeaderBoard from '../pages/leaderboard.vue'
-import Friends from '../pages/friends.vue'
-
 const routes = [
 	{
 		path: '/',
@@ -14,13 +11,25 @@ const routes = [
 	{
 		path: '/leaderboard',
 		name: 'leaderboard',
-		component: LeaderBoard,
+		component: () => import('../pages/leaderboard.vue'),
 	},
 
 	{
 		path: '/friends',
 		name: 'friends',
-		component: Friends,
+		component: () => import('../pages/friends.vue'),
+	},
+
+	{
+		path: '/results',
+		name: 'results',
+		component: () => import('../pages/results.vue'),
+	},
+
+	{
+		path: '/airdrop',
+		name: 'airdrop',
+		component: () => import('../pages/airdrop.vue'),
 	},
 
 	{
