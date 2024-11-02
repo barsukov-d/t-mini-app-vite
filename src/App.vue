@@ -2,7 +2,8 @@
 // import HelloWorld from './components/HelloWorld.vue'
 
 import WebApp from '@twa-dev/sdk'
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { RouterView } from 'vue-router'
 import { useRouter } from 'vue-router'
 
@@ -42,12 +43,23 @@ const footerMenu = [
 		label: 'Airdrop',
 	},
 ]
+
+const { t, locale } = useI18n({ useScope: 'global' })
+
+console.log('WebApp.initDataUnsafe.user?.language_code', WebApp.initDataUnsafe.user?.language_code)
+
+const langCode = ref(WebApp.initDataUnsafe.user?.language_code || 'en')
+
+onMounted(() => {
+	locale.value = langCode.value
+})
 </script>
 
 <template>
 	<main class="flex-shrink-0 flex-grow py-5 px-4">
 		<!-- <pre>{{ WebApp.initDataUnsafe.user }}</pre>
 		<pre>{{ WebApp.initData }}</pre> -->
+		<!-- <pre>{{ langCode }}</pre> -->
 		<RouterView></RouterView>
 	</main>
 	<footer class="sticky bottom-0 z-50 bg-[#242424]">
@@ -64,7 +76,7 @@ const footerMenu = [
 	</footer>
 </template>
 
-<style scoped>
+<style>
 .q-tab__label {
 	font-size: 10px;
 }
