@@ -57,12 +57,13 @@ onMounted(() => {
 
 <template>
 	<main class="flex-shrink-0 flex-grow py-5 px-4">
-		<!-- <pre>{{ WebApp.initDataUnsafe.user }}</pre>
+		<!-- <pre>user?.id - {{ WebApp.initDataUnsafe.user?.id }}</pre>
+		<pre>start_param - {{ WebApp.initDataUnsafe.start_param }}</pre>
 		<pre>{{ WebApp.initData }}</pre> -->
 		<!-- <pre>{{ langCode }}</pre> -->
 		<RouterView></RouterView>
 	</main>
-	<footer class="sticky bottom-0 z-50 bg-[#242424]">
+	<footer class="sticky bottom-0 z-20 bg-[#242424]">
 		<q-tabs v-model="tab" class="text-zinc-400" active-color="white">
 			<q-tab
 				v-for="item in footerMenu"

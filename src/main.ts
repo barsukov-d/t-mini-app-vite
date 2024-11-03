@@ -14,6 +14,8 @@ const i18n = createI18n({
 			// Common
 			buttonTakeIQTest: 'Take IQ Test',
 			buttonInviteFriends: 'Invite Friends',
+			buttonInviteFriend: 'Invite Friend',
+			buttonCopyLink: 'Copy Link',
 
 			// Home Page
 			pageHomeTitle: 'Find out your IQ and get Crypto',
@@ -24,14 +26,18 @@ const i18n = createI18n({
 			pageHomeTitleTasks: 'Tasks',
 
 			// Friends Page
-
 			pageFriendsTitle: 'Invite your friends and get more IQs',
 			pageFriendsInviteTitle: 'Invite your friends and get more IQs',
+
+			// Toasts
+			toastInviteFriendTitle: 'Invite your friends to get more IQs',
 		},
 		ru: {
 			// Common
 			buttonTakeIQTest: 'Пройти тест на IQ',
 			buttonInviteFriends: 'Пригласить друзей',
+			buttonInviteFriend: 'Пригласить друга',
+			buttonCopyLink: 'Скопировать ссылку',
 
 			// Home Page
 			pageHomeTitle: 'Узнай свой IQ и получи крипту',
@@ -44,6 +50,9 @@ const i18n = createI18n({
 			// Friends Page
 			pageFriendsTitle: 'Пригласите своих друзей и получите больше IQ',
 			pageFriendsInviteTitle: 'Пригласите своих друзей и получите больше IQ',
+
+			// Toasts
+			toastInviteFriendTitle: 'Пригласите своих друзей и получите больше IQ',
 		},
 	},
 })
