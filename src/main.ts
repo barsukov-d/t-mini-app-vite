@@ -16,6 +16,8 @@ const i18n = createI18n({
 			buttonInviteFriends: 'Invite Friends',
 			buttonInviteFriend: 'Invite Friend',
 			buttonCopyLink: 'Copy Link',
+			buttonWhatIsIQTest: 'What is IQ Test?',
+			buttonConnectWallet: 'Connect Wallet',
 
 			// Home Page
 			pageHomeTitle: 'Find out your IQ and get Crypto',
@@ -29,6 +31,16 @@ const i18n = createI18n({
 			pageFriendsTitle: 'Invite your friends and get more IQs',
 			pageFriendsInviteTitle: 'Invite your friends and get more IQs',
 
+			// Results Page
+			pageResultsTitle: 'Here you can find the results of the IQ test',
+			pageResultsTextNotHaveTest: `It seems you haven't taken the test yet, the results will be available after passing the test`,
+
+			// Page air drop
+			pageAirdropTitle: 'Airdrop',
+
+			// Page Leaderboard
+			pageLeaderboardTitle: 'Telegram wall of fame',
+
 			// Toasts
 			toastInviteFriendTitle: 'Invite your friends to get more IQs',
 		},
@@ -38,9 +50,11 @@ const i18n = createI18n({
 			buttonInviteFriends: 'Пригласить друзей',
 			buttonInviteFriend: 'Пригласить друга',
 			buttonCopyLink: 'Скопировать ссылку',
+			buttonWhatIsIQTest: 'Что такое тест на IQ?',
+			buttonConnectWallet: 'Подключить кошелек',
 
 			// Home Page
-			pageHomeTitle: 'Узнай свой IQ и получи крипту',
+			pageHomeTitle: 'Узнайте свой IQ и получите крипту',
 			pageHomeTitleScore: 'Ваш общий балл IQ',
 			pageHomeTitleScoreRewards: 'Награды',
 			pageHomeTitleScoreTasks: 'Задания',
@@ -51,8 +65,19 @@ const i18n = createI18n({
 			pageFriendsTitle: 'Пригласите своих друзей и получите больше IQ',
 			pageFriendsInviteTitle: 'Пригласите своих друзей и получите больше IQ',
 
+			// Results Page
+			pageResultsTitle: 'Здесь вы можете найти результаты теста на IQ',
+
+			// Page air drop
+			pageAirdropTitle: 'Airdrop',
+
+			// Page Leaderboard
+			pageLeaderboardTitle: 'Телеграмм зал славы',
+
 			// Toasts
 			toastInviteFriendTitle: 'Пригласите своих друзей и получите больше IQ',
+			pageResultsTextNotHaveTest:
+				'Похоже, вы еще не прошли тест, результаты будут доступны после прохождения теста',
 		},
 	},
 })

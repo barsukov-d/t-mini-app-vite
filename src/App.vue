@@ -51,6 +51,7 @@ console.log('WebApp.initDataUnsafe.user?.language_code', WebApp.initDataUnsafe.u
 const langCode = ref(WebApp.initDataUnsafe.user?.language_code || 'en')
 
 onMounted(() => {
+	WebApp.expand()
 	locale.value = langCode.value
 })
 </script>
