@@ -33,6 +33,12 @@ const routes = [
 	},
 
 	{
+		path: '/iq-test',
+		name: 'iq-test',
+		component: () => import('../pages/iq-test.vue'),
+	},
+
+	{
 		path: '/:pathMatch(.*)*',
 		redirect: { name: 'Home' },
 	},

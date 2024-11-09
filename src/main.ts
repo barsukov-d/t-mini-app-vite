@@ -41,6 +41,9 @@ const i18n = createI18n({
 			// Page Leaderboard
 			pageLeaderboardTitle: 'Telegram wall of fame',
 
+			// Page iq test
+			pageIqTestTitle: 'IQ Test',
+
 			// Toasts
 			toastInviteFriendTitle: 'Invite your friends to get more IQs',
 		},
@@ -73,6 +76,9 @@ const i18n = createI18n({
 
 			// Page Leaderboard
 			pageLeaderboardTitle: 'Телеграмм зал славы',
+
+			// Page iq test
+			pageIqTestTitle: 'Тест на IQ',
 
 			// Toasts
 			toastInviteFriendTitle: 'Пригласите своих друзей и получите больше IQ',

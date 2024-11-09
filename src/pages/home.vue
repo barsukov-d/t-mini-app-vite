@@ -52,6 +52,7 @@ const iqScore = ref<number>(100)
 	</div>
 
 	<q-btn
+		to="/iq-test"
 		color="white"
 		:label="t('buttonTakeIQTest')"
 		class="w-full text-2xl rounded-2xl font-bold p-4 mt-10 text-black normal-case"
