@@ -18,6 +18,7 @@ const i18n = createI18n({
 			buttonCopyLink: 'Copy Link',
 			buttonWhatIsIQTest: 'What is IQ Test?',
 			buttonConnectWallet: 'Connect Wallet',
+			buttonAnswerOnQuestion: 'Next',
 
 			// Home Page
 			pageHomeTitle: 'Find out your IQ and get Crypto',
@@ -43,6 +44,8 @@ const i18n = createI18n({
 
 			// Page iq test
 			pageIqTestTitle: 'IQ Test',
+			pageIqTestTimer: 'Time left',
+			pageIqTestQuestion: 'Question',
 
 			// Toasts
 			toastInviteFriendTitle: 'Invite your friends to get more IQs',
@@ -55,6 +58,7 @@ const i18n = createI18n({
 			buttonCopyLink: 'Скопировать ссылку',
 			buttonWhatIsIQTest: 'Что такое тест на IQ?',
 			buttonConnectWallet: 'Подключить кошелек',
+			buttonAnswerOnQuestion: 'Далее',
 
 			// Home Page
 			pageHomeTitle: 'Узнайте свой IQ и получите крипту',
@@ -79,6 +83,8 @@ const i18n = createI18n({
 
 			// Page iq test
 			pageIqTestTitle: 'Тест на IQ',
+			pageIqTestTimer: 'Осталось времени',
+			pageIqTestQuestion: 'Вопрос',
 
 			// Toasts
 			toastInviteFriendTitle: 'Пригласите своих друзей и получите больше IQ',
